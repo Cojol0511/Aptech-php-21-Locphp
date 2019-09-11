@@ -1,0 +1,16 @@
+.Khoi{
+    color: red;
+    background-color: lightgreen;
+   
+}
+.infortable{
+    text-align:left;
+    background-color:lightgrey;
+}
+header{
+    background-color: lightblue;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}

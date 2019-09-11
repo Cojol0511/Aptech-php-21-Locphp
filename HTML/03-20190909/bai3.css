@@ -1,0 +1,19 @@
+#first-div,
+        #end {
+            background-color: gray;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #second-div {
+            background-color: lightgray;
+            height: 300px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
