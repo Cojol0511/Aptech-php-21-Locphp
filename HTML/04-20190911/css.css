@@ -1,0 +1,70 @@
+background {
+            display: flex;
+            background-color: lightblue;
+        }
+
+        div1 {
+            height: 500px;
+            width: 50%;
+            background-image: url(/home/cojol/Desktop/Aptech-PHP-19-PhungHoangPhuLoc/HTML/04-20190911/download.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div2 {
+            height: 500px;
+            width: 50%;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div21 {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        div211{
+            margin: 10px;
+            border : 0.1px solid lightblue;
+            height: 20px;
+           
+        }
+        text {
+            margin-left: 5%;
+            font-size: 12px;
+            color:lightgrey;
+        }
+        box{
+            margin: 7%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            height: 30px;
+        }
+        boxremember{
+            margin: 2px;
+            height: 10px;
+            width: 10px;
+            background-color: whitesmoke;
+            border: 0.1px solid black;
+        }
+        boxlogin{
+            background-color: blue;
+            height: 100%;
+            width: 50px;
+            margin-left: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        text_1{
+            margin: 13px;
+            font-size: 15px;
+            color:rgb(73, 64, 64);
+        }
