@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #Co {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+
+        #c1,
+        #c2,
+        #c3 {
+            height: 100%;
+            width: 33.33%;
+        }
+
+        #c1 {
+            background-color: white;
+        }
+
+        #c2 {
+            background-color: blue;
+        }
+
+        #c3 {
+            background-color: red;
+        }
+
+        @media screen and (max-width: 999px) {
+            #c1 {
+                background-color: black;
+            }
+
+            #c2 {
+                background-color: yellow;
+            }
+
+            #c3 {
+                background-color: red;
+            }
+        }
+
+        @media screen and (max-width: 499px) {
+            #Co {
+                flex-direction: column;
+            }
+
+            #c1,
+            #c2,
+            #c3 {
+                height: 33.33%;
+                width: 100%;
+            }
+
+            #c1 {
+                background-color: black;
+            }
+
+            #c2 {
+                background-color: red;
+            }
+
+            #c3 {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body style="height: 100vh; width: 100vw">
+    <div id="Co">
+        <div id="c1"></div>
+        <div id="c2"></div>
+        <div id="c3"></div>
+    </div>
+</body>
+
+</html>
