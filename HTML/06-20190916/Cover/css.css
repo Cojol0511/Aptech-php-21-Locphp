@@ -1,0 +1,20 @@
+.Header__First-Row__Second-Column__Ul--list-unstyle {
+  list-style: none;
+}
+
+.Header__First-Row__Second-Column__Ul__Li__Anchor {
+  border-bottom-width: 4px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: transparent;
+  padding-bottom: 8px;
+}
+
+.Header__First-Row__Second-Column__Ul__Li__Anchor--active {
+  border-bottom-color: white;
+}
+
+.Header__First-Row__Second-Column__Ul__Li__Anchor:hover {
+  text-decoration: none;
+  border-bottom-color: grey !important;
+}
+/*# sourceMappingURL=css.css.map */
