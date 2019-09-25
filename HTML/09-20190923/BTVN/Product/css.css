@@ -1,0 +1,49 @@
+.navbar-top{
+    position: fixed;
+    top:0;
+    z-index: 990;
+}
+.row{
+    margin: 20px;
+}
+.container2-row1-col12 {
+    height: 500px;
+    margin: 2px;
+}
+.container2-row2-col6{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.chu-trang{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.chu-den{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.hinhvuong-trang{
+    height: 60%;
+    width: 60%;
+    background:white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hinhvuong-den{
+    height: 60%;
+    width: 60%;
+    background:black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

@@ -1,0 +1,37 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #CCCECF;
+    text-decoration: none;
+}
+.navbar-top{
+    position: relative;
+    top:0;
+}
+.row_first_col3{
+    border-right: 1px lightgrey solid;
+    background-color: #F8F9FA;
+    color: #AFAFAF;
+}
+.row_first_col9{
+    margin-top: 20px;
+}
+li{
+    margin-top: 20px;
+    font-size: 15px;
+}
+li:hover{
+    color: black;
+}
+li:nth-child(1){
+    color: blue;
+}
+.chart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightskyblue;
+    height: 300px;
+    width: 100%;
+}
