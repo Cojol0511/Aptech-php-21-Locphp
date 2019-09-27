@@ -1,0 +1,61 @@
+li {
+    margin: 7px;
+    color: #9A9DA0;
+}
+
+li:hover {
+    color: white;
+}
+
+li:nth-child(1) {
+    color: white;
+}
+
+#container-top {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+}
+
+#info {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info-picture {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.HinhTron {
+    height: 140px;
+    width: 140px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.Picture {
+    height: 400px;
+    width: 400px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+@media screeen and (max-width: 989px){
+    .reverse{
+            display: flex;
+            flex-direction: column-reverse;
+    }
+}
