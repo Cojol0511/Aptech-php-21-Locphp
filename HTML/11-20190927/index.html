@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <button onclick="inTen()">Name</button>
+    <button onclick="inTuoi()">Age</button>
+
+    <p id="name"></p>
+    <p id="ten"></p>
+    <button onclick="change()">Change</button>
+   
+
+    <script>
+        var ten = "Loc";
+        var tuoi = 21;
+        var hocSinh = {
+            name: "Tiger",
+            tuoi: 47,
+            relationship: "alone",
+            quetNha: function () {
+                console.log("Lay choi");
+                console.log("Quet");
+            }
+        };
+
+        hocSinh.quetNha();
+        console.log(hocSinh.name);
+
+        function change(){
+            
+            document.getElementById('name').innerHTML = "cac";
+        }
+
+        function inTen() {
+            console.log(ten);
+        }
+
+        function inTuoi() {
+            console.log(tuoi);
+        }
+    </script>
+</body>
+
+</html>
