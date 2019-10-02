@@ -12,16 +12,17 @@
 
     <img src="tat.png" id="light" height="100" width="100">
     <button onclick= "switchlight()">Light Switch</button>
-
+    
     <script>
+        
         function switchlight() {
             var image = document.getElementById('light');
             if (image.src.match("tat.png")) {
                 image.src = "bat.png";
-                console.log("bat");
+
             } else {
                 image.src = "tat.png";
-                console.log("tat")
+
             }
         }
     </script>

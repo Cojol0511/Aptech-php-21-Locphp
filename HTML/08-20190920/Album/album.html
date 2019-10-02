@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <script language="javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 
 </head>
 
 <body>
+
+    <div class="an" style="display: block">
+            <div class="col-6 d-flex align-items-center">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <h3 class="mx-3">Album</h3>
+                </div>
+    </div>
+
     <div class="container-fluid top">
         <div class="row h-100">
             <div class="col-6 d-flex align-items-center">
@@ -21,7 +30,7 @@
                 <h3 class="mx-3">Album</h3>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-                <div class="menu">
+                <div id class="menu c">
                     <ul class="list-unstyled">
                         <li class="line"></li>
                         <li class="line"></li>
@@ -32,7 +41,7 @@
         </div>
     </div>
     <!--done toppppppppppp-->
- 
+
     <div class="container-fluid intro">
         <div class="row h-100">
             <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center">
@@ -50,180 +59,189 @@
     <!--done introooooooo-->
 
     <div class="body">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
                         </div>
-                        <h6>9 mins</h6>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
                         </div>
-                        <h6>9 mins</h6>
                     </div>
-                </div>
 
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
                         </div>
-                        <h6>9 mins</h6>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
                         </div>
-                        <h6>9 mins</h6>
                     </div>
-                </div>
 
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
                         </div>
-                        <h6>9 mins</h6>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
                         </div>
-                        <h6>9 mins</h6>
                     </div>
-                </div>
 
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
                         </div>
-                        <h6>9 mins</h6>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
                         </div>
-                        <h6>9 mins</h6>
                     </div>
-                </div>
 
-            </div>
-            <div class="col-md-4 my-4">
-                <div class="ex">
-                    <div class="ex-hinhvuong">
-                        <h3>Thumbnail</h3>
-                    </div>
-                    <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <div class="ex-button-bot">
-                        <div>
-                            <button type="button" class="btn btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
                         </div>
-                        <h6>9 mins</h6>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
+                        </div>
                     </div>
-                </div>
 
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
+                        </div>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
+                        </div>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
+                        </div>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4">
+                    <div class="ex">
+                        <div class="ex-hinhvuong">
+                            <h3>Thumbnail</h3>
+                        </div>
+                        <p class="text-center">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="ex-button-bot">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-outline-secondary">Edit</button>
+                            </div>
+                            <h6>9 mins</h6>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!--done bodyyyyyyyyy-->
 
     <div class="container footer">
         <div class="row">
             <div class="col-12 d-flex justify-content-between">
-                    <div>
-                            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-                            <p>New to Bootstrap? <a href="#">Visit the homepage</a>  or read our <a href="#">getting started guide</a> .</p>
-                    </div>
-                    <a href="#">Back to top</a>
-        
+                <div>
+                    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+                    <p>New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting started
+                            guide</a> .</p>
+                </div>
+                <a href="#">Back to top</a>
+
             </div>
-            
+
         </div>
     </div>
     <!--done footerrrrrr-->
+
+    <script language="javascript">
+        $(document).ready(function () {
+            $('c').click(function () {
+                $('an').show();
+            })
+        })
+    </script>
 </body>
 
 </html>

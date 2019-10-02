@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script language="javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody id="BODY">
+        </tbody>
+    </table>
+
+    <button onclick="taoTR()">Click</button>
+
+    <script language="javascript">
+        var apha = [0, "a", "b", "c", 1, "d", "e", "f", 2, "g", "h", "i", 3, "j", "k", "l", 4, "m", "n", "o", 5, "p",
+            "q", "r", 6, "s", "t", "u", 7, "v", "w", "x", 8, "y", "z"
+        ];
+
+
+        function taoTR() {
+            for (var i = 0; i < 9; i++) {
+                var tro = document.createElement("TR");
+                b = document.getElementById("BODY").appendChild(tro);
+                var att = document.createAttribute("id");
+                valueIDTR = "row" + i;
+                att.value = valueIDTR;
+                b.setAttributeNode(att);
+
+                taoTD(i);
+            }
+        }
+
+        function taoTD(soRow) {
+            var row = "row" + soRow;
+            for (var i = 0; i < 4; i++) {
+                getRow = document.getElementById(row);
+                var td = document.createElement("TD");
+                var att = document.createAttribute("id");
+                valueIDTD = "data"+i+"-"+row;
+                att.value = valueIDTD;
+                getRow.appendChild(td).setAttributeNode(att);
+
+                document.getElementById(valueIDTD).innerHTML = apha[soRow*4+i];
+            }
+
+            //getTD = document.getElementById
+            // var att = document.createAttribute("id");
+            // att.value = "data-"+row;
+            // .setAttributeNode(att)
+        }
+    </script>
+</body>
+
+</html>
