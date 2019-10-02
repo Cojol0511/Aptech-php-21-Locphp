@@ -27,12 +27,12 @@
 
     <script language="javascript">
         var apha = [0, "a", "b", "c", 1, "d", "e", "f", 2, "g", "h", "i", 3, "j", "k", "l", 4, "m", "n", "o", 5, "p",
-            "q", "r", 6, "s", "t", "u", 7, "v", "w", "x", 8, "y", "z"
+            "q", "r", 6, "s", "t", "u", 7, "v", "w", "x", 8, "y", "z","end." 
         ];
-
+        var i=0;
 
         function taoTR() {
-            for (var i = 0; i < 9; i++) {
+            //for (var i = 0; i < 9; i++) {
                 var tro = document.createElement("TR");
                 b = document.getElementById("BODY").appendChild(tro);
                 var att = document.createAttribute("id");
@@ -41,7 +41,8 @@
                 b.setAttributeNode(att);
 
                 taoTD(i);
-            }
+                i++;
+           // }
         }
 
         function taoTD(soRow) {
@@ -54,7 +55,7 @@
                 att.value = valueIDTD;
                 getRow.appendChild(td).setAttributeNode(att);
 
-                document.getElementById(valueIDTD).innerHTML = apha[soRow*4+i];
+                document.getElementById(valueIDTD).innerHTML = apha[(soRow*4+i)%36];
             }
 
             //getTD = document.getElementById
