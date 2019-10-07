@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button onclick="loadDuLieu();">Load Du Lieu</button>
+    <script>
+        function loadDuLieu() {
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function () {
+                if (http.readyState == 1) {
+                    console.log('Bat dau gui di yeu cau');
+                }
+                if (http.readyState == 2) {
+                    console.log('May chu da nhan');
+                }
+                if (http.readyState == 3) {
+                    console.log('May chu dang xu ly');
+                }
+                if (http.readyState == 4 && http.status == 200) {
+                    console.log(typeof (http.responseText));
+                    console.log(JSON.parse(http.responseText));
+                    document.getElementById('demo').innerHTML = http.responseText;
+                }
+            }
+            // lay tu file tren may cua minh
+            // http.open("GET", 'nam.txt', true);
+            // lay tu may chu cua minh namcoi.com
+            http.open("GET", 'https://namcoi.com/aptech-demo/user-crud-laravel/public/api/users', true);
+            http.send();
+        }
+    </script>
+</body>
+
+</html>

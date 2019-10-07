@@ -1,0 +1,17 @@
+.fluid{
+    height: 100px;
+    background-color: red;
+}
+.ex-hinhvuong {
+    height: 100px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex-button-bot {
+    display: flex;
+    justify-content: space-around;
+}
