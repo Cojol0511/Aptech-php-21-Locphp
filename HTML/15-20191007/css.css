@@ -1,0 +1,13 @@
+
+.cardImage {
+    height: 300px;
+    color: white;
+    background-image: url('https://images.pexels.com/photos/3022417/pexels-photo-3022417.jpeg?cs=srgb&dl=cloudiness-clouds-cloudscape-3022417.jpg&fm=jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+
