@@ -29,7 +29,7 @@
         ],
         [
             "name" => "Black",
-            "price" => "2200",
+            "price" => "2000",
             "currency" => "VND",
         ],
     ];
@@ -44,15 +44,21 @@
         </thead>
         <tbody>
             <?php
-            for ($i = 0; $i < 5; $i++){
+            for ($i = 0; $i < 5; $i++) {
                 $n = $product[$i]['name'];
                 $p = $product[$i]['price'];
-                if($p > 1500){
-                    $pri = "00VND";
-                    $p =(float) $p/1000;
-                    $pri = (float)$p.$pri; 
-                }else{
-                    $pri = $p."VND";
+                if ($p > 1500) {
+                    if ($p % 1000 == 0) {
+                        $pri = ".000VND";
+                        $p = (float) $p / 1000;
+                        $pri = (float) $p . $pri;
+                    } else {
+                        $pri = "00VND";
+                        $p = (float) $p / 1000;
+                        $pri = (float) $p . $pri;
+                    }
+                } else {
+                    $pri = $p . "VND";
                 }
                 echo "
                     <tr>
@@ -61,8 +67,8 @@
                         <td>$pri</td>
                     </tr>";
             }
-                ?>
-                 </tbody>
+            ?>
+        </tbody>
     </table>
 
 </body>
