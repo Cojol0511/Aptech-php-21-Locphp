@@ -16,7 +16,8 @@ class PhonesTableSeeder extends Seeder
         for ($i = 0; $i < 5; $i++) {
             # code...
             DB::table('phones')->insert([
-                'phone_numbers' => $faker->phoneNumber
+                'phone_numbers' => $faker->phoneNumber,
+                'user_id' => $i+1,
             ]);
         }
     }
