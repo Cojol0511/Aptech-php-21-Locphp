@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::resource('articles', 'ArticleController');
+
+//https://github.com/Cojol0511/Aptech-php-21-Locphp/tree/master/PHP/PhungHoangPhuLoc/phunghoangphuloc-aptech-21-laravel
