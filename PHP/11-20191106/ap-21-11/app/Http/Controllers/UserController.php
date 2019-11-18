@@ -97,7 +97,6 @@ class UserController extends Controller
     {
         //
         User::destroy($id);
-        $users = User::get();
-        return view('users.index', ['users' => $users]);
+        return redirect()->route('users.index');
     }
 }

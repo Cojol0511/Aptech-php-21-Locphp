@@ -12,14 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('ckeditor');
 });                                                                                                                                                                                                                                                         
 
 
-Route::get('/users', 'UserController@index')->name('users.index');
-Route::get('/users/create', 'UserController@create');
-Route::get('/users/{id}', 'UserController@show');
-Route::post('/users', 'UserController@store');
-Route::delete('/users/{id}', 'UserController@destroy');
-Route::get('/users/{id}/edit', 'UserController@edit');                                                          
-Route::put('/user/{id}', 'UserController@update')->name('users.update');
+// Route::get('/users', 'UserController@index')->name('users.index');
+// Route::get('/users/create', 'UserController@create');
+// Route::get('/users/{id}', 'UserController@show');
+// Route::post('/users', 'UserController@store');
+// Route::delete('/users/{id}', 'UserController@destroy');
+// Route::get('/users/{id}/edit', 'UserController@edit');                                                          
+// Route::put('/users/{id}', 'UserController@update')->name('users.update');
+
+
+Route::resource('users', 'UserController');

@@ -17,10 +17,10 @@
         <form action="http://localhost:8000/users/{{$user->id}}">
           <button type="submit">Xem chi tiet</button>
         </form>
-        <form action="{{asset('/users/'.$user->id.'/edit')}}">
+        <form action="{{route('users.edit', $user->id)}}">
           <button type="submit">Thay doi</button>
         </form>
-        <form action="{{asset('/users/' .$user->id)}}" method="POST">
+        <form action="{{route('users.destroy', $user->id)}}" method="POST">
           <input type="hidden" name="_token" value="{{csrf_token()}}">
           <input type="hidden" name="_method" value="DELETE">
           <button type="submit">Xoa</button>

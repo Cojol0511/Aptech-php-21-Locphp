@@ -1,5 +1,5 @@
  
-<form action="http://localhost:8000/users" method="POST">
+<form action="{{route('posts'}}" method="POST">
   <input type="hidden" name="_token" value="{{csrf_token()}}">
   <div>
     <label for="">Name</label>
